@@ -11,8 +11,8 @@
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 700;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -182,6 +182,10 @@
     > li {
         margin-bottom: $spacing-unit;
     }
+}
+
+.post-list h2 {
+    margin-bottom: 0px;
 }
 
 .post-meta {
