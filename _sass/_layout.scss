@@ -10,6 +10,48 @@
     position: relative;
 }
 
+#color-banner div {
+    float: left;
+    height: 5px;
+    width: 11.111%;
+}
+
+#color-banner #one {
+    background-color: black;
+}
+
+#color-banner #two {
+    background-color: blue;
+}
+
+#color-banner #three {
+    background-color: yellow;
+}
+
+#color-banner #four {
+    background-color: red;
+}
+
+#color-banner #five {
+    background-color: green;
+}
+
+#color-banner #six {
+    background-color: deeppink;
+}
+
+#color-banner #seven {
+    background-color: goldenrod;
+}
+
+#color-banner #eight {
+    background-color: darkorange;
+}
+
+#color-banner #nine {
+    background-color: maroon;
+}
+
 .site-title {
     font-size: 30px;
     font-weight: 700;
