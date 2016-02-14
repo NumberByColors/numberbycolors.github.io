@@ -7,7 +7,7 @@ function colorForIndex(index) {
         case 4: return "#d32f2f";
         case 5: return "#388e3c";
         case 6: return "#ec407a";
-        case 7: return "#ffc107";
+        case 7: return "goldenrod" /*"#ffc107"*/;
         case 8: return "#e65100";
         case 9: return "#880e4f";
     }
@@ -41,15 +41,20 @@ function drawHeader(targetDiv) {
 
 // 1. Draw the header when the page loads
 $(document).ready(function() {
-    var headerDiv = $("#header-js")[0];
-    headerDiv.style.height = "20px";
-    headerDiv.style.width = "100%";
+    var headerDivs = $(".number-color-strip");
+    for (var headerDiv of headerDivs) {
+        headerDiv.style.height = "20px";
+        headerDiv.style.width = "100%";
     
-    drawHeader(headerDiv);
+        drawHeader(headerDiv);
+    }
+    
 });
 
 // 2. Update the header when the page resizes
 $(window).resize(function() {
-    var headerDiv = $("#header-js")[0];    
-    drawHeader(headerDiv);
+    var headerDivs = $(".number-color-strip");  
+    for (var headerDiv of headerDivs) {
+        drawHeader(headerDiv);
+    }  
 });
