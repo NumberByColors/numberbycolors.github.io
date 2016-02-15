@@ -29,6 +29,20 @@
     }
 }
 
+.number-color-strip.full-width {
+    width: 100%;
+}
+
+.number-color-strip.auto-width {
+    width: auto;
+}
+
+.wrapper {
+    .number-color-strip {
+        float: left;
+    }
+}
+
 #color-banner div {
     border-top: 1px solid darkgray;
     border-bottom: 1px solid darkgray;
