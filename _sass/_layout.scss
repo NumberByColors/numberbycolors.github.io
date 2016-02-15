@@ -18,23 +18,12 @@
 }
 
 .number-color-strip {
-    div {
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;        
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;  
-        cursor: "default";             
-    }
-}
-
-.number-color-strip.full-width {
+    height: 20px;
     width: 100%;
 }
 
 .number-color-strip.auto-width {
-    width: auto;
+    //width: auto;
 }
 
 .wrapper {
@@ -43,55 +32,22 @@
     }
 }
 
-#color-banner div {
-    border-top: 1px solid darkgray;
-    border-bottom: 1px solid darkgray;
-}
-
-#color-banner div {
+.digit-div {
     float: left;
-    height: 5px;
-    width: 10%;
+    text-align: center;
+    font-size: 18px;
+    
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;        
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+    cursor: "default";      
 }
 
-#color-banner #zero {
-    background-color: black;
-}
-
-#color-banner #one {
-    background-color: white;
-}
-
-#color-banner #two {
-    background-color: #3f51b5;
-}
-
-#color-banner #three {
-    background-color: #ffeb3b;
-}
-
-#color-banner #four {
-    background-color: #d32f2f;
-}
-
-#color-banner #five {
-    background-color: #388e3c;
-}
-
-#color-banner #six {
-    background-color: #ec407a;
-}
-
-#color-banner #seven {
-    background-color: #ffc107;
-}
-
-#color-banner #eight {
-    background-color: #e65100;
-}
-
-#color-banner #nine {
-    background-color: #880e4f;
+.float-row {
+    display: inline-block;
 }
 
 .site-title {

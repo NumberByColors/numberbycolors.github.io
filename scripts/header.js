@@ -27,35 +27,30 @@ function drawHeader(targetDiv) {
     
     for (var i = 0; i < numOfDigits; i++) {
         var digitDiv = document.createElement("div");
-        digitDiv.style.cssFloat = "left";        
+        digitDiv.classList.add("digit-div");   
         digitDiv.style.height = (digitWidth).toString() + "px";
         digitDiv.style.width = (digitWidth).toString() + "px";
         
         digitDiv.innerText = (i % 10).toString();
         digitDiv.style.color = colorForIndex(i);
-        digitDiv.style.fontSize = "18px";
-        digitDiv.style.textAlign = "center";
         
         targetDiv.appendChild(digitDiv);
     }
 }
 
-// 1. Draw the header when the page loads
-$(document).ready(function() {
+function drawAllHeaders() {
     var headerDivs = $(".number-color-strip");
     for (var headerDiv of headerDivs) {
-        headerDiv.style.height = "20px";
-        headerDiv.style.width = "100%";
-    
         drawHeader(headerDiv);
     }
-    
+}
+
+// 1. Draw the header when the page loads
+$(document).ready(function() {
+    drawAllHeaders();    
 });
 
 // 2. Update the header when the page resizes
 $(window).resize(function() {
-    var headerDivs = $(".number-color-strip");  
-    for (var headerDiv of headerDivs) {
-        drawHeader(headerDiv);
-    }  
+    drawAllHeaders(); 
 });
