@@ -15,7 +15,6 @@ function colorForIndex(index) {
 
 function drawHeader(targetDiv) {
     // Handle the resize event
-    //var divWidth = $(window).width(); //in px
     var divWidth = targetDiv.offsetWidth;
     var digitWidth = 20;
     var numOfDigits = Math.floor(divWidth / digitWidth);
@@ -38,19 +37,34 @@ function drawHeader(targetDiv) {
     }
 }
 
-function drawAllHeaders() {
-    var headerDivs = $(".number-color-strip");
-    for (var headerDiv of headerDivs) {
-        drawHeader(headerDiv);
-    }
+function resizeHeaderColumns() {
+    var headerWidth = $(".full-width")[0].offsetWidth;
+    var siteTitleWidth = $(".site-title")[0].offsetWidth;
+    var signatureWidth = $("#signature")[0].offsetWidth;
+    
+    var leftWidth = 80;
+    var rightWidth = 80;
+    var centerWidth = headerWidth - (siteTitleWidth + signatureWidth) - (leftWidth + rightWidth) - 1;
+    
+    $(".left-width").width(80);
+    $(".center-width").width(centerWidth);
+    $(".right-width").width(80);
+}
+
+function drawAllNumberColorStrips() {
+    $(".number-color-strip").each(function(i, div) {
+        drawHeader(div);
+    });
 }
 
 // 1. Draw the header when the page loads
 $(document).ready(function() {
-    drawAllHeaders();    
+    resizeHeaderColumns();
+    drawAllNumberColorStrips();    
 });
 
 // 2. Update the header when the page resizes
 $(window).resize(function() {
-    drawAllHeaders(); 
+    resizeHeaderColumns();
+    drawAllNumberColorStrips(); 
 });

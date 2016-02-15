@@ -22,9 +22,17 @@
     width: 100%;
 }
 
-.number-color-strip.auto-width {
-    //width: auto;
-}
+// .left-width {
+//     width: 80px;
+// }
+
+// .center-width {
+//     width: 200px;
+// }
+
+// .right-width {
+//     width: 50px;
+// }
 
 .wrapper {
     .number-color-strip {
@@ -48,6 +56,10 @@
 
 .float-row {
     display: inline-block;
+    
+    * {        
+        float: left;
+    }
 }
 
 .site-title {
