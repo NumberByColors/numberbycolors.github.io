@@ -8,6 +8,8 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    
+    margin-top: 12px;
 }
 
 #signature {
@@ -15,24 +17,14 @@
     height: 30px;
     vertical-align: middle;
     margin-top: 12px;
+    padding-right: 16px;
 }
 
 .number-color-strip {
-    height: 20px;
+    height: 40px;
     width: 100%;
+    cursor: default;
 }
-
-// .left-width {
-//     width: 80px;
-// }
-
-// .center-width {
-//     width: 200px;
-// }
-
-// .right-width {
-//     width: 50px;
-// }
 
 .wrapper {
     .number-color-strip {
@@ -42,8 +34,9 @@
 
 .digit-div {
     float: left;
-    text-align: center;
-    font-size: 18px;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 900;
     
     -webkit-user-select: none;
     -webkit-touch-callout: none;        
@@ -57,13 +50,13 @@
 .float-row {
     display: inline-block;
     
-    * {        
-        float: left;
-    }
+    // * {        
+    //     float: left;
+    // }
 }
 
 .site-title {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: -1px;

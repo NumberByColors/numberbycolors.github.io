@@ -16,7 +16,7 @@ function colorForIndex(index) {
 function drawHeader(targetDiv) {
     // Handle the resize event
     var divWidth = targetDiv.offsetWidth;
-    var digitWidth = 20;
+    var digitWidth = 32;
     var numOfDigits = Math.floor(divWidth / digitWidth);
     
     // Remove all children
@@ -37,20 +37,6 @@ function drawHeader(targetDiv) {
     }
 }
 
-function resizeHeaderColumns() {
-    var headerWidth = $(".full-width")[0].offsetWidth;
-    var siteTitleWidth = $(".site-title")[0].offsetWidth;
-    var signatureWidth = $("#signature")[0].offsetWidth;
-    
-    var leftWidth = 80;
-    var rightWidth = 80;
-    var centerWidth = headerWidth - (siteTitleWidth + signatureWidth) - (leftWidth + rightWidth) - 1;
-    
-    $(".left-width").width(80);
-    $(".center-width").width(centerWidth);
-    $(".right-width").width(80);
-}
-
 function drawAllNumberColorStrips() {
     $(".number-color-strip").each(function(i, div) {
         drawHeader(div);
@@ -59,12 +45,10 @@ function drawAllNumberColorStrips() {
 
 // 1. Draw the header when the page loads
 $(document).ready(function() {
-    resizeHeaderColumns();
     drawAllNumberColorStrips();    
 });
 
 // 2. Update the header when the page resizes
 $(window).resize(function() {
-    resizeHeaderColumns();
     drawAllNumberColorStrips(); 
 });
