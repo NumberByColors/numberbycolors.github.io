@@ -17,7 +17,7 @@ function drawHeader(targetDiv) {
     // Handle the resize event
     var divWidth = targetDiv.offsetWidth;
     var digitWidth = 25;
-    var numOfDigits = Math.floor(divWidth / digitWidth);
+    var numOfDigits = Math.floor(divWidth / digitWidth)
     
     // Remove all children
     while (targetDiv.firstChild) {
