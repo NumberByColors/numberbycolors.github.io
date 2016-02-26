@@ -16,7 +16,7 @@ function colorForIndex(index) {
 function drawHeader(targetDiv) {
     // Handle the resize event
     var divWidth = targetDiv.offsetWidth;
-    var digitWidth = 32;
+    var digitWidth = 25;
     var numOfDigits = Math.floor(divWidth / digitWidth);
     
     // Remove all children
