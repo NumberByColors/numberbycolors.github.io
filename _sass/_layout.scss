@@ -14,10 +14,10 @@
 
 #signature {
     float: right;
-    height: 30px;
+    height: 32px;
     vertical-align: middle;
     margin-top: 12px;
-    padding-right: 16px;
+    padding-right: 21px;
 }
 
 .number-color-strip {
@@ -37,6 +37,7 @@
     text-align: left;
     font-size: 32px;
     font-weight: 900;
+    font-family: $heading-font-family;
     
     -webkit-user-select: none;
     -webkit-touch-callout: none;        
@@ -62,6 +63,7 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    font-family: $heading-font-family;
 
     &,
     &:visited {
@@ -82,7 +84,7 @@
     
     #signature {
         display: block;
-        height: 30px;
+        height: 32px;
         float: left;
         margin-top: 0px;
     }
