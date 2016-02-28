@@ -20,6 +20,17 @@
     padding-right: 21px;
 }
 
+img.portrait-photo {
+    $image-width: 350px;
+    max-width: $image-width;
+    -webkit-clip-path: circle(150px at center);
+    clip-path: circle(150px at center);
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .number-color-strip {
     height: 40px;
     width: 100%;
