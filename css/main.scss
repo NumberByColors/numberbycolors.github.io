@@ -3,8 +3,16 @@
 ---
 @charset "utf-8";
 
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "bootstrap",
+        "numberbycolors"
+        //"base",
+        //"layout",
+        //"syntax-highlighting"
+;
 
-
+// Old styles ---------------------------------------------------------------------------------------------------
 // Our variables
 // $heading-font-family: "Roboto", sans-serif;
 // $base-font-family: "Merriweather", serif;
@@ -45,11 +53,3 @@
 // }
 
 
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "bootstrap"
-        //"base",
-        //"layout",
-        //"syntax-highlighting"
-;
