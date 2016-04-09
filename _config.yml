@@ -19,3 +19,8 @@ github_username:  NumberByColors
 
 # Build settings
 markdown: kramdown
+sass:
+    load_paths:
+        - _sass
+        - bootstrap-sass-3.3.6/assets/stylesheets
+    style: compressed
