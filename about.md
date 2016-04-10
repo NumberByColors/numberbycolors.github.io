@@ -4,7 +4,7 @@ title: Me
 permalink: /about/
 ---
 
-<img class="portrait-photo" src="/images/me.jpg" alt="David Stephens">
+<img class="portrait-photo centered" src="/images/me.jpg" alt="David Stephens">
 
 See those colorful numbers up there? I can't think about numbers without seeing those colors associated with each digit. I've grown to see this [synesthesia](https://en.wikipedia.org/wiki/Synesthesia) as my life's mission. To meld the "numbers" of technology and math with the "colors" of people in powerful new ways. To achieve the objective through the subjective.
 
@@ -12,13 +12,15 @@ See those colorful numbers up there? I can't think about numbers without seeing 
 Twitter - [@numberbycolors](https://twitter.com/NumberByColors)
 
 ## Work
+<img class="logo centered" src="/images/microsoft-logo.png" alt="Microsoft">
+
 I'm a program manager at Microsoft, working on [Visual F#](https://msdn.microsoft.com/en-us/library/dd233154.aspx) and debugging features for [.NET Core](https://dotnet.github.io/). 
 
 Previously at Microsoft, I've worked on:
 
 * [Tools for Apache Cordova](https://www.visualstudio.com/en-us/features/cordova-vs.aspx)
 * [F12 Developer Tools](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/) in Microsoft Edge
-* [TypeScript](http://www.typescriptlang.org/), and
+* [TypeScript](http://www.typescriptlang.org/)
 * [.NET Native](https://msdn.microsoft.com/en-us/library/dn584397(v=vs.110).aspx).
 
 In college, I worked with a handful of organizations on some awesome projects:
@@ -28,6 +30,8 @@ In college, I worked with a handful of organizations on some awesome projects:
 * [Speedway Motors](http://www.speedwaymotors.com/) - Developed an ASP.NET web app used to collect and manage all of the product information at the company.
 
 ## Education
+<img class="logo centered" src="/images/unl-logo.png" alt="University of Nebraska - Lincoln">
+
 I have Bachelor of Science degrees in Computer Science and Mathematics from the University of Nebraska - Lincoln. 
 
 At UNL, I studied software engineering, business, and design at the [Raikes School of Computer Science and Management](http://raikes.unl.edu).

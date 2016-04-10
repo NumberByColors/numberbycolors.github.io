@@ -8,6 +8,12 @@
     cursor: "default";    
 }
 
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 // Header styles ----------------------------------------------
 .site-title {
     letter-spacing: -1px;
@@ -105,8 +111,8 @@
     $image-radius: 120px;
     -webkit-clip-path: circle($image-radius at center);
     clip-path: circle($image-radius at center);
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.logo {
+    max-width: 100px;
 }
