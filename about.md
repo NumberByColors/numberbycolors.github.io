@@ -12,7 +12,8 @@ See those colorful numbers up there? I can't think about numbers without seeing 
 Twitter - [@numberbycolors](https://twitter.com/NumberByColors)
 
 ## Work
-<img class="logo centered" src="/images/microsoft-logo.png" alt="Microsoft">
+
+![Microsoft](/images/microsoft-logo.png){: .logo .centered }
 
 I'm a program manager at Microsoft, working on [Visual F#](https://msdn.microsoft.com/en-us/library/dd233154.aspx) and debugging features for [.NET Core](https://dotnet.github.io/). 
 
@@ -30,7 +31,7 @@ In college, I worked with a handful of organizations on some awesome projects:
 * [Speedway Motors](http://www.speedwaymotors.com/) - Developed an ASP.NET web app used to collect and manage all of the product information at the company.
 
 ## Education
-<img class="logo centered" src="/images/unl-logo.png" alt="University of Nebraska - Lincoln">
+![University of Nebraska - Lincoln](/images/unl-logo.png){: .logo .centered }
 
 I have Bachelor of Science degrees in Computer Science and Mathematics from the University of Nebraska - Lincoln. 
 
