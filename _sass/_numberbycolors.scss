@@ -94,5 +94,19 @@
 
 // Footer styles ----------------------------------------------
 .site-footer {
+    margin-top: 20px;
     font-family: $font-family-sans-serif;
+}
+
+// About styles ----------------------------------------------
+.portrait-photo {
+    $image-width: 300px;
+    max-width: $image-width;
+    $image-radius: 120px;
+    -webkit-clip-path: circle($image-radius at center);
+    clip-path: circle($image-radius at center);
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
