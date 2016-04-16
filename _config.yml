@@ -23,4 +23,4 @@ sass:
     load_paths:
         - _sass
         - bootstrap-sass-3.3.6/assets/stylesheets
-    style: compressed
+    # style: compressed
